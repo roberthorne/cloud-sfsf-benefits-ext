@@ -91,6 +91,7 @@ public class UserPointsDAO extends BasicDAO<UserPoints> {
 			points = new UserPoints();
 			points.setCampaign(campaign);
 			points.setUser(user);
+			points.setEntitlementPoints(targetPoints);
 			points.setAvailablePoints(targetPoints);
 			saveNew(points);
 		} else {
